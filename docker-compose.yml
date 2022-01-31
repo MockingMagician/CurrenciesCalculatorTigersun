@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  php:
+    build: ./docker/php
+    container_name: tigersun_php7
+    restart: always
+    volumes:
+      - ./:/var/www/html
